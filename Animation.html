@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <!-- used for awsom animations and rotate, -->
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            height: 100vh;
+            background-color: #e46162;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            background-color: #edf108;
+            border: 7px solid black;
+            border-radius: 40px;
+            height: 200px;
+            width: 300px;
+            margin: 80px;
+            transition: all 1s ease-in-out;
+        }
+
+        .box2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            background-color: #edf108;
+            border: 7px solid black;
+            border-radius: 40px;
+            height: 200px;
+            width: 300px;
+            margin: 80px;
+            transition: all 1s ease-in-out;
+        }
+
+        .box3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            background-color: #edf108;
+            border: 7px solid black;
+            border-radius: 40px;
+            height: 200px;
+            width: 300px;
+            margin: 80px;
+            transition: all 1s ease-in-out;
+        }
+
+        .box:hover {
+            transform: rotate(360deg);
+            /* transform: skew(40deg); */
+            font-size: 40px;
+            font-style: bold;
+            cursor: pointer;
+            color: aqua;
+        }
+
+        .box2:hover {
+            transform: skew(40deg);
+            font-size: 40px;
+            font-style: bold;
+            cursor: pointer;
+            color: rgb(15, 247, 247);
+        }
+
+        .box3:hover {
+            transform: translate3d(42px, -62px, -135px);
+            cursor: pointer;
+            font-size: 40px;
+            font-style: bold;
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            This is Priyanka
+        </div>
+        <div class="box2">
+            This is Priyanka
+        </div>
+        <div class="box3">
+            This is Priyanka
+        </div>
+    </div>
+</body>
+
+</html>
